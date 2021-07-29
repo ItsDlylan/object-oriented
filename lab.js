@@ -1,11 +1,15 @@
 //////////////////////////// PROBLEM 1 ////////////////////////////
 /*
   Create an object called me.
-  Give it a key of name with the value being your name, and another key of age with the value being your age.
+  Give it a key of name with the value being your name, 
+  and another key of age with the value being your age.
 */
 
 //Code here
-let me = new Object();
+let me = {
+	name: 'name',
+	age: 3,
+};
 
 //////////////////////////// PROBLEM 2 ////////////////////////////
 
@@ -15,7 +19,7 @@ let me = new Object();
 //and goodBoy (a boolean).
 
 //Code here
-dog = {
+let dog = {
 	name: 'string',
 	color: 'string',
 	age: 'int',
@@ -25,33 +29,46 @@ dog = {
 /* Print out the name of the dog you created in problem 2 using dot-notation. */
 
 //Code here
-console.log(dog.name);
+// console.log(dog.name);
 //////////////////////////// PROBLEM 4 ////////////////////////////
 /* Print out the color of the dog you created in problem 2 using bracket-notation. */
 
 //Code here
-
+// console.log(dog['color']);
 //////////////////////////// PROBLEM 5 ////////////////////////////
 /*
-  Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday.
-  Have the values to those keys be strings that are equal to your favorite thing in that category.
+  Make a 'favoriteThings' object that contains the following keys: band, food, person, 
+  book, movie, holiday.
+  Have the values to those keys be strings that are equal to your favorite thing in 
+  that category.
 */
 
 //Code here
-
+let favoriteThings = {
+	band: 'N/A',
+	food: 'Spaghetti',
+	person: 'My Grandma',
+	movie: 'I am Number 4',
+	holiday: 'Halloween',
+};
 /*
-  After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
+  After you've made your object, use bracket or dot notation to add another 
+  key named 'car' with the value being your favorite car and then 
+  another key named 'brand' with the value being your favorite brand.
 */
 
 //Code here
-
+favoriteThings.car = 'Miata';
+favoriteThings.brand = 'Apple';
 /*
-  Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
+  Now use bracket or dot notation to change the value of the food key in your 
+  favoriteThings object to be 'Chicken Nuggets'
   and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 */
 
 //Code here
-
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
 //////////////////////////// PROBLEM 6 ////////////////////////////
 // Do not edit the code below.
 var user = {
@@ -71,7 +88,8 @@ var user = {
 */
 
 //Code Here
-
+user.name = 'Bryan G. Smith';
+user.email = 'bryan.smith@devmounta.in';
 //////////////////////////// PROBLEM 7 ////////////////////////////
 /*
   Using the user object above, delete the users age off of the object.
