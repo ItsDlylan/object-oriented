@@ -96,25 +96,54 @@ user.email = 'bryan.smith@devmounta.in';
 */
 
 //Code Here
+user.age = '';
 
 //////////////////////////// PROBLEM 8 ////////////////////////////
 /*
-  Create a class called 'Cat'. Make sure to call your constructor, and require these 3 parameters: name, age, color.
-  Outside of your class, create an instance of your cat, passing in whatever values you would like.
+  Create a class called 'Cat'. Make sure to call your constructor, 
+  and require these 3 parameters: name, age, color.
+  Outside of your class, create an instance of your cat, 
+  passing in whatever values you would like.
   Print the name of your cat instance using dot notation.
 */
 
 //Code here
+class Cat {
+	constructor(name, age, color) {
+		this.name = name;
+		this.age = age;
+		this.color = color;
+	}
+}
 
+let newCat = new Cat('midnight', 6, 'black');
+// console.log(newCat.name);
 //////////////////////////// PROBLEM 9 ////////////////////////////
 /*
-  Create a class called 'Wizard'. Make sure to call your constructor, and require these 3 parameters: name, age, favoriteSpell.
-  Add a function to your Wizard class called castSpell. This function should print "{name} has cast {favoriteSpell}"
-  Outside of your class, create an instance of your Wizard, passing in whatever values you would like.
+  Create a class called 'Wizard'. Make sure to call your constructor, a
+  nd require these 3 parameters: name, age, favoriteSpell.
+  Add a function to your Wizard class called castSpell. This function s
+  hould print "{name} has cast {favoriteSpell}"
+  Outside of your class, create an instance of your Wizard, passing in 
+  whatever values you would like.
   Call the castSpell function on the instance of your wizard.
 */
 
 //Code here
+class Wizard {
+	constructor(name, age, favoriteSpell) {
+		this.name = name;
+		this.age = age;
+		this.favoriteSpell = favoriteSpell;
+	}
+
+	castSpell() {
+		console.log(`${this.name} casted ${this.favoriteSpell}`);
+	}
+}
+
+const Harry = new Wizard('Harry', 20, 'GoodbyeAtticusious');
+// Harry.castSpell();
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
 /*
@@ -140,7 +169,25 @@ user.email = 'bryan.smith@devmounta.in';
 */
 
 //Code Here
+class Phone {
+	constructor(brand, model, storage, color, price) {
+		this.brand = brand;
+		this.model = model;
+		this.storage = storage;
+		this.color = color;
+		this.price = price;
+		this.sold = false;
+	}
 
+	sell() {
+		console.log(`${this.brand}${this.model} has been sold`);
+		this.sold = true;
+	}
+
+	changePrice(newPrice) {
+		this.price = newPrice;
+	}
+}
 /*
     Next make three new phone instances using your class.
     Send in values of your choice. They should match these data types:
@@ -152,7 +199,9 @@ user.email = 'bryan.smith@devmounta.in';
 */
 
 //Code Here
-
+let iPhone10 = new Phone('Apple', 'iPhone10', '64', 'red', 999);
+let iPhone11 = new Phone('Apple', 'iPhone11', '128', 'gray', 1199);
+let iPhone12 = new Phone('Apple', 'iPhone12', '128', 'white', 1299);
 /* 
   Call the changePrice function on one of your phones, 
   don't forget to pass in a new price 
@@ -161,7 +210,8 @@ user.email = 'bryan.smith@devmounta.in';
 */
 
 //Code Here
-
+iPhone11.changePrice('1100');
+console.log(iPhone11);
 /*
   Now call the sell method on one of your other phone objects
 
@@ -169,7 +219,10 @@ user.email = 'bryan.smith@devmounta.in';
 */
 
 //Code Here
+iPhone10.sell();
+iPhone12.sell();
 
+console.log(iPhone10.sold, iPhone12.sold);
 //////////////////////////// PROBLEM 11 ////////////////////////////
 
 /*
