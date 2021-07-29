@@ -211,7 +211,7 @@ let iPhone12 = new Phone('Apple', 'iPhone12', '128', 'white', 1299);
 
 //Code Here
 iPhone11.changePrice('1100');
-console.log(iPhone11);
+// console.log(iPhone11);
 /*
   Now call the sell method on one of your other phone objects
 
@@ -219,16 +219,17 @@ console.log(iPhone11);
 */
 
 //Code Here
-iPhone10.sell();
-iPhone12.sell();
+// iPhone10.sell();
+// iPhone12.sell();
 
-console.log(iPhone10.sold, iPhone12.sold);
+// console.log(iPhone10.sold, iPhone12.sold);
 //////////////////////////// PROBLEM 11 ////////////////////////////
 
 /*
   Use the spread operator to create a copy of the colors object below.
   Store the copy in a variable called colorsCopy.
-  Note: We did not cover the spread operator in class. We do not expect you to know how to use it. Challenge yourself by going online and researching what the spread operator is and how to use it.
+  Note: We did not cover the spread operator in class. We do not expect you to know how to use it. 
+  Challenge yourself by going online and researching what the spread operator is and how to use it.
 */
 
 //do not edit this object
@@ -240,7 +241,8 @@ const colors = {
 //do not edit this object
 
 //Code Here
-
+let colorsCopy = { ...colors };
+console.log(colorsCopy);
 /*
  Now use the spread operator to combine the following 2 objects into one. 
  Call the new variable helensInfo. 
@@ -266,7 +268,8 @@ const shippingInfo = {
 //do not edit the objects above
 
 //Code Here
-
+let helensInfo = { ...contactInfo, ...shippingInfo };
+console.log(helensInfo);
 //Print helensInfo to see what it looks like, there should be no repeating properties.
 
 //////////////////////////// PROBLEM 12 ////////////////////////////
